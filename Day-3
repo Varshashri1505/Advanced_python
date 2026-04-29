@@ -30,3 +30,18 @@ print(b)
 print(c)
 print(d)
 print(e)
+
+
+a="TVK is good and mass and cool"
+b=a.split("and")--------> list
+print(b)
+
+
+a="RAJUVARMA is FROM CHENNAI and innocent"
+b=" ".join("cute" for i in a if i in "AEIOU")---->comprehensions
+print(b)
+
+a="fbvdrijbdgbe"#--------->#sorting return type list
+b=sorted(a,reverse=True)
+print(b)
+
