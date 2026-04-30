@@ -1,0 +1,56 @@
+#List functions
+#append 
+#insert
+#pop,pop with index 
+
+a=[i for i in range(10,200)]
+print(a)
+
+a=[chr(i)for i in range(65,91)]
+print(a)
+
+
+a=[chr(i)for i in range(65,91)if chr(i) not in "AEIOU"]
+print(a)
+
+a=6789 
+b=[i for i in str(a)]
+print(max(b))
+
+names=["Ram","Raj","Rose","Jack","Pavi"]
+marks=[45,33,90,27,78]
+pos=1
+for i in range(5):
+    if marks[i]>40:
+        print("{}.{} has scored {}%".format(pos,names[i],marks[i]))
+        pos=pos+1
+
+
+
+names=["raM","RAJ","rose","JaCk","PaVi"]
+marks=[[30,40,50],[66,77,55],[33,78,90],[87,97,57],[47,88,44]]
+for i in range(5):
+    average=sum(marks[i])//3
+    if average>80:
+        g= "S"
+    elif average<40:
+        g="Fail"
+    elif average > 40 and average <50:
+        g="D"
+    else:
+        g="A"
+    print("{}.Mr/Ms {} has scored {}% - {} Grade".format(i+1,names[i].title(),average,g))
+
+
+names=["raM","RAJ","rose","JaCk","PaVi"]
+age=[34,21,67,37,12]
+res=list(zip(age,names))
+res1=sorted(res)
+pos=1
+for i in res1:
+    print("Rank {} : {} age is {} yrs old".format(pos,i[1],i))
+    pos=pos+1
+
+
+
+
