@@ -19,3 +19,27 @@ def flower(a):
     flower(a+1)
     print(a,end=" ")
 flower(1)
+
+-------------------------------
+def raju(a):
+    if a == 4:
+        return 1
+    B=raju(a+1)
+    print("Hai",end=" ")
+    return B+2
+
+
+res=raju(1)
+print(res)
+
+
+-----------QR Code using python----------------
+import qrcode
+qr=qrcode.QRCode()
+a="TVK is Rocking" 
+qr.add_data(a)
+qr.make(fit=True)
+res=qr.make_image(fill_color="black",back_color = "White")
+res.save("VARSHA.png")
+print("created varsha")
+
