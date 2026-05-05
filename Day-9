@@ -9,3 +9,27 @@ def Varsha(a):
     print(i,end=" ")
     Varsha(a/i)
 Varsha(a)
+#----------Use Of Constructor of shapes----------
+-----------square----------
+class Square:
+    def __init__(self,a):
+        self.area=a*a
+    def display(self):
+        print("Area of Square",self.area)
+
+s=Square(40)
+s2=Square(4)
+s.display()
+s2.display()
+
+---------rectangle---------
+class rect:
+    def __init__(self,a,b):
+        self.area=a*b
+    def display(self):
+        print("Area of rectangle",self.area)
+
+r=rect(40,60)
+r2=rect(7,5)
+r.display()
+r2.display()
