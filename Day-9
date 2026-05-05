@@ -1,0 +1,11 @@
+#-----------Prime Factorization---------------
+a=int(input("Enter a Value: "))
+def Varsha(a):
+    if a == 1:
+        return
+    i=2 
+    while(a%i !=0):
+        i=i+1
+    print(i,end=" ")
+    Varsha(a/i)
+Varsha(a)
