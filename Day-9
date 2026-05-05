@@ -33,3 +33,20 @@ r=rect(40,60)
 r2=rect(7,5)
 r.display()
 r2.display()
+
+
+-------circle area with list------
+class circle():
+    def __init__(self):
+        rad=int(input("Enter Radius Value"))
+        self.r=rad
+    def display(self):
+        print("Area of Circle:",3.14*self.r**2)
+
+a=int(input("Enter number of circle: "))
+list=[]
+for i in range(a):
+    c=circle()
+    list.append(c)
+    c.display()
+    print("-----------------------------------------------")
