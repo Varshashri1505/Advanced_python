@@ -1,0 +1,43 @@
+"""
+#-----------------dictionary to list-------------
+b={'A':2,'B':7,'C':9}
+a1=[i for i in b.keys()]
+a2=[i[1] for i in b.items()]
+print(a1)
+print(a2)
+"""
+
+#funcitons:
+#1) infinite arg
+#2)default arg
+#3)keyword arg
+"""
+def abc(*args):#---------------------infinte args
+    sum=0
+    for i in args:
+        sum=sum+i
+    print(sum)
+abc(20,30)
+abc(56,6,6,6)
+"""
+"""
+def ace(name="Akshay"):--------------default args
+    print("Good Morning",name)
+
+ace("Raju")
+ace("Naresh")
+ace()
+
+def a(**Kwargs):-----------KEYWORD args
+    print(Kwargs)
+
+a(Name="Gill",Score=40)
+
+"""
+
+from googletrans import Translator
+t=Translator
+a=input("Enter any sentence: ")
+b=input("Enter Target lan: ")
+res=t.translate(a,dest=b)
+print(res.text)
