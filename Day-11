@@ -31,3 +31,27 @@ data=[["Ram",19,"CSE"],
       ["Bhavs",5,"IT"]]
 res=tabulate(data,headers=title,tablefmt="pretty")
 print(res)
+
+
+#----------------implementation of Stack--------------
+class Stack:
+    def __init__(self):
+        self.l=[]
+    def push(self,a):
+        self.l.append(a)
+    def pop(self):
+        self.l.pop()
+    def display(self):
+        b="->".join(map(str,self.l))
+        print(b)
+    def peek(self):
+        print(self.l[-1])
+
+s=Stack()
+s.push(100)
+s.push(90)
+s.push(300)
+s.display()
+s.pop()
+s.display()
+s.peek()
